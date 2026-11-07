@@ -21,3 +21,18 @@ body{font-size:12px}.app{min-height:100vh;display:flex;flex-direction:column}.da
 @media(max-width:1100px){.network-map{gap:6px 10px;padding:7px}.channel-link{width:11px;right:-11px}.channel-4 .channel-link,.channel-5 .channel-link{left:-11px}.channel-name{font-size:7px}}
 @media(prefers-reduced-motion:reduce){.problem,.zone.problem,.access-item.problem,.computer.problem,.utility.problem,.channel-node.problem,.radar-sectors .sector-alert,.radar-point-alert{animation:none!important}.problem,.channel-node.problem{outline:2px solid #ff9c90}.radar-sectors .sector-alert{fill:#d34b4380}}
 .network-map{grid-template-columns:minmax(0,1fr) minmax(48px,.85fr) minmax(0,1fr)}.network-backplane{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}.network-backplane path{fill:none;stroke:#7aab88;stroke-width:.45;stroke-dasharray:1.5 2;animation:backplane-flow 2.5s linear infinite;vector-effect:non-scaling-stroke}.network-backplane path.link-fault{stroke:#f18d80;stroke-width:1;stroke-dasharray:2 3;animation:none}.channel-link{display:none}.cloud-node{position:relative;z-index:1}.channel-name{white-space:normal;line-height:1.1;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}.channel-node{overflow:hidden}@keyframes backplane-flow{to{stroke-dashoffset:-7}}
+/* Version 1.3: concentric coverage and administrative controls. */
+.status-meta span{font-size:11px;letter-spacing:.1em}.status-meta b{font-size:13px}.status-meta div{gap:8px}
+.perimeter-visual{container-type:size}.radar-disc{width:min(300px,90cqw,90cqh)}
+.radar-disc .p1{top:40%;left:50%;right:auto;bottom:auto;transform:translateX(-50%)}
+.radar-disc .p2{top:31%;left:50%;right:auto;bottom:auto;transform:translateX(-50%)}
+.radar-disc .p3{top:19%;left:50%;right:auto;bottom:auto;transform:translateX(-50%)}
+.radar-disc .p4{top:6%;left:50%;right:auto;bottom:auto;transform:translateX(-50%)}
+.radar-disc .facility-glyph{font-size:17px}.radar-disc .facility-glyph small{top:17px;font-size:6px}
+.condition.condition-red{animation:condition-alert 1s ease-in-out infinite alternate;color:#ffe1dc}.condition.condition-red .eyebrow,.condition.condition-red strong span,.condition.condition-red .condition-arrow{color:#ffd3cc}
+@keyframes condition-alert{from{background:#5c2522;box-shadow:inset 0 0 18px #e45d4d55,0 0 8px #c2453b55}to{background:#b54135;box-shadow:inset 0 0 26px #ff8f7b77,0 0 18px #f25949a0}}
+.admin-control{margin-top:16px;border:1px solid #385045;padding:12px;background:#182822}.admin-control label{display:block;margin-bottom:8px;color:#a6c4af;font-size:10px;letter-spacing:.1em}.admin-control select{width:100%;font-size:11px}.admin-control p{font-size:10px;margin:8px 0 0;color:#afc2b4}
+.computer small{white-space:normal;line-height:1.2;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+@media(max-width:1100px){.status-meta span{font-size:10px}.status-meta b{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.condition.condition-red{animation:none!important;background:#852f29;box-shadow:inset 0 0 0 2px #f68a7b}}
+.computer small{-webkit-line-clamp:3}
