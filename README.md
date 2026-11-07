@@ -1,4 +1,4 @@
-# 2323 Bravo #1 — Security Control v1.1
+# 2323 Bravo #1 — Security Control v1.2
 
 A standalone, fictional security dashboard. Open `index.html` in a modern browser, or serve the directory with `python3 -m http.server 8000` and open `http://localhost:8000`. No dependencies or build step are required. For Netlify, deploy this directory as a static site (no build command; publish directory `.`).
 
